@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util" xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+    http://www.springframework.org/schema/aop
+    http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+    http://www.springframework.org/schema/tx
+    http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd" >
+
+<!--    ANNOTATION BASED CONFIGURATION-->
+
+    <context:component-scan base-package="com.SpringFramework.demo"></context:component-scan>
+<!--XML BASED CONFIGURATION-->
+
+<!--    <bean id = "doctor" class="com.SpringFramework.demo.Doctor">-->
+<!--         Setter injection -->
+<!--        <property name="qualification" value="MBBS"></property>-->
+<!--        Constructor injection - For the first argument in constructor, the below value is passed -->
+<!--        <constructor-arg value="MBBS"></constructor-arg>-->
+<!--    </bean>-->
+<!--    <bean id = "nurse" class ="com.SpringFramework.demo.Nurse"></bean>-->
+
+
+</beans>
