@@ -51,7 +51,21 @@ Inversion of control is nothing but giving the control from the developer to the
 
 To follow this principle, we use the pattern dependency injection. If subject is the dependent object of student. Spring will take care to create the subject object when it's required. 
 
-If spring boot application is started, it will have all the beans or the objects in the factory. All the objects will be created when the spring boot context is started. Then all the beans will be stored in the container. Whenever the bean is needed, we can access it through the spring which is retrieved from the container. 
+If spring boot application is started, it will have all the beans or the objects in the factory. All the objects will be created when the spring boot context is started. Then all the beans will be stored in the container. Whenever the bean is needed, we can access it through the spring factory or the application context where the spring retrieves the objects from the container. 
+
+3. What is Spring Initializer ?
+
+Spring Boot provides a tool i.e Spring Initializer which is a bare minimum base to create an application. 
+https://start.spring.io/ is a tool which is called as spring initializer. 
+
+4. Creating Simple API
+
+@SpringBootApplication - key annotation for a spring boot application which denotes the main configuration application file and also enables auto configuration which can be seen under the @SpringBootApplication annotation. We can also exclude the auto configuration. 
+@componentscan - By default, the packages that are annotated with springboot application are scanned and it stores the beans from that particular packages.
+If we wanted to add other packages, we must add @componentScan.
+
+
+
 
 
 
