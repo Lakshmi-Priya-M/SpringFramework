@@ -15,3 +15,46 @@ Let's take an example of shopping cart. In Shopping cart, we add an items or rem
 3. Converting an input data - We might require to santize the data before processing it. Lets say converting a string to json data.
 
 Here, the AOP super man comes to seperate the cross cutting concerns from the business logic and maintain and run it seperately.
+
+# Spring Boot
+
+1. What is Spring ? and What is Spring Boot ?
+
+Spring : 
+
+Spring is a Java Framework built to create an enterprise ready application. To create a java application, lot of configurations, properties, packages, modules and jar files are required to be added.
+Spring is a framework that allows the developer to create an application for different activity.  There are lot of modules available in spring framework i.e Spring Core, Spring MVC, Spring Batch, Spring Data JPA, Spring Web, Spring Data which can be used as per the requirement. 
+In Spring , you have to concentrate on configurations as well as the business logic. For example, If you need to include Hibernate, it's configuration need to be added. 
+If you need to include cache, it is required to do configurations. So, a lot of configurations are required when we are working in Spring. Once it is developed, it has to be deployed in application server or web server. Spring Framework makes it easy to create an application, but a lot of configurations are required to be added apart from the main business logic.
+
+Spring Boot :
+
+Spring Boot is an advanced version of Spring Framework where we can concentrate only on Business logic where the configurations are taken care by Spring. Spring Boot provides the rapid application development. i.e it allows to create an application easily. Spring Boot also provides a different starter template that includes all the dependency that are required to do a particular job. If you want to work in jdbc task, you can just download the spring boot jdbc starter template with all the mandatory dependency are provided.
+
+Advantage :
+
+Spring Boot provides the auto configuration. 
+It also provides the embedded server. Once the application is created, a war file is generated. and the war file is deployed into any of the application server or web server. (JBOss, tomcat)  In spring Boot, that particular server is embedded to that entire application. 
+
+It is always a production ready since we can use the jar file in any of the environment. 
+
+Spring Boot is the default option to create a microservice application since the market is going towards the microservice instead of monolithic application service.
+
+2. What is Depedency Injection ?
+
+In any of the programming language, Dependency Injection pattern is used to create an object. For example, to create a student object, we manually create it like below,
+Student s1 =  new Student();
+
+In an enterprise application, there will be many classes which will be interlinked. It is highly difficult to create an object manually in such a scenario. Hence, inversion of control principle came over here to solve this.
+
+Inversion of control is nothing but giving the control from the developer to the spring to take care of the object creation and it's dependency. 
+
+To follow this principle, we use the pattern dependency injection. If subject is the dependent object of student. Spring will take care to create the subject object when it's required. 
+
+If spring boot application is started, it will have all the beans or the objects in the factory. All the objects will be created when the spring boot context is started. Then all the beans will be stored in the container. Whenever the bean is needed, we can access it through the spring which is retrieved from the container. 
+
+
+
+
+
+
