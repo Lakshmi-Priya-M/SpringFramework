@@ -64,6 +64,19 @@ https://start.spring.io/ is a tool which is called as spring initializer.
 @componentscan - By default, the packages that are annotated with springboot application are scanned and it stores the beans from that particular packages.
 If we wanted to add other packages, we must add @componentScan.
 
+The below link can be used to know all the configuration that can be declared in application properties file which can be configured manually.
+https://docs.spring.io/ 
+
+To run the spring boot application using command, enter the below command in terminal
+mvn spring-boot:run
+
+In right side, if you see maven tab, you can see the different lifecycle of spring boot application which can also be clicked to run the application.
+
+springboot-Dev-tools dependency allows to build the changes automatically instead of stopping and running the application after each change.
+
+5. Architecture
+
+![architecture](https://user-images.githubusercontent.com/63499584/178547932-2a05ce1e-1625-4116-aec4-6b2c123e525f.png)
 
 
 
