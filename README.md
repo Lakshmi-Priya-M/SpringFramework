@@ -79,9 +79,35 @@ springboot-Dev-tools dependency allows to build the changes automatically instea
 ![architecture](https://user-images.githubusercontent.com/63499584/178547932-2a05ce1e-1625-4116-aec4-6b2c123e525f.png)
 
 
+6. Creating Spring Boot application with an ease using the following annotations
 
+a. @Component - It tells the spring that the annotated class is a Bean class since spring only knows the bean class, it has to be annotated with @Component.
+b. @ComponentScan - By default, the packages that are annotated with springboot application are scanned and it stores the beans from that particular packages.
+If we wanted to add other packages, we must add @componentScan.
+c. @SpringBootApplication - key annotation for a spring boot application which denotes the main configuration application file and also enables auto configuration which can be seen under the @SpringBootApplication annotation. We can also exclude the auto configuration. 
+springbootapplication annotation contains @SpringBootConfiguration, @EnableAutoConfiguration and @componentScan internally.
+d. The @EnableAutoConfiguration annotation enables Spring Boot to auto-configure the application context. Therefore, it automatically creates and registers beans based on both the included jar files in the classpath and the beans defined by us.
+e. @Repository - @Repository Annotation is a specialization of @Component annotation which is used to indicate that the class provides the mechanism for storage, retrieval, update, delete and search operation on objects.3 Dec 2021
+f. @Service - In an application, the business logic resides within the service layer so we use the @Service Annotation to indicate that a class belongs to that layer. It is also a specialization of @Component Annotation like the @Repository Annotation.
+g. @Entity - Specifies that the class is an entity. This annotation is applied to the entity class.
+h. @RequestBody - to convert the json object to entity
+i. @Controller - The @Controller annotation indicates that a particular class serves the role of a controller
+j. @RestController - RestController is used for making restful web services with the help of the @RestController annotation. The @Controller annotation indicates that the class is a “Controller” e.g. a web controller while the @RestController annotation indicates that the class is a controller where @RequestMapping methods assume @ResponseBody semantics by default i.e. servicing REST API.
+k. @Id - to denote that the field is a primary key
+l. @GeneratedValue - to generate the value automatically after a successful insertion.
+m. @Requestmapping, @GetMapping, @PostMapping, 
+n. @Autowired - Spring already contains beans in the container. Manually creating the objects with the new operator is not required. Whenever an object is required, we can autowire it to the reference (departmentservice) we create it.
+Example : 
 
+@Autowired
+private DepartmentService departmentService; 
 
+There are 3 different ways the dependency injection is handled.
+i) property based - @autowired
+ii) constructor based
+iii) setter based injection
+
+o. 
 
 
 
